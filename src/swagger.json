@@ -1,0 +1,41 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "RentalX Documentation",
+        "description": "This is an API Rent",
+        "versin": "1.0.0", 
+        "contact": {
+            "email": "arquivos.fernandoesteves@gmail.com"
+        }
+    },
+        "paths": {
+            "/categoryes": {
+                "post": {
+                    "tags":["Category"],
+                    "summary": "Creta a category",
+                    "description": "Create a new category",
+                    "requestBody": {
+                        "content": {
+                        "application/": {
+                            "schema": {
+                                "type": "object",
+                                "prototipes": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "name": "Category name sample",
+                                    "description": "Category description sample"
+                                }
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
