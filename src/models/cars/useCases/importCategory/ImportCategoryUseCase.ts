@@ -22,6 +22,7 @@ class ImportCategoryUseCase {
                     categories.push({ name, description })
                 })
                 .on("end", () => {
+                    fs.promises.unlink(file.path)  //Apaga arquivo temporário
                     resolve(categories)
                 })
                 .on("error", (err) => {

@@ -8,18 +8,18 @@
             "email": "arquivos.fernandoesteves@gmail.com"
         }
     },
-        "paths": {
-            "/categoryes": {
-                "post": {
-                    "tags":["Category"],
-                    "summary": "Creta a category",
-                    "description": "Create a new category",
-                    "requestBody": {
-                        "content": {
-                        "application/": {
+    "paths": {
+        "/categories": {
+            "post": {
+                "tags":["Category"],
+                "summary": "Creta a category",
+                "description": "Create a new category",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
                             "schema": {
                                 "type": "object",
-                                "prototipes": {
+                                "properties": {
                                     "name": {
                                         "type": "string"
                                     },
@@ -33,9 +33,44 @@
                                 }
                             }
                         }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created."
+                    },
+                    "500": {
+                        "description": "Category already exist."
+                    }
+                }
+            },
+            "get": {
+                "tags":["Category"],
+                "summary": "List all category",
+                "description": "List all category",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type":"array",
+                                    "itens":{
+                                    "prototipes":{
+                                        "name": {
+                                            "type":"string"
+                                        },
+                                        "description": {
+                                            "type":"string"
+                                        }
+                                    }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     }
+}
