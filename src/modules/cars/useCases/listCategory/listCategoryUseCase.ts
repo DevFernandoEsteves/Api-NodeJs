@@ -4,8 +4,8 @@ import { ICategoriesRepository } from "../../repositories/ICategoriesRepository"
 class ListCategoryUseCase {
     constructor(private categoryesReposytories: ICategoriesRepository) { }
 
-    execute(): Category[] {
-        const categories = this.categoryesReposytories.list()
+    async execute(): Promise<Category[]> {
+        const categories = await this.categoryesReposytories.list()
         return categories
     }
 }
