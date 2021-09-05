@@ -1,11 +1,19 @@
-# Api-NodeJs
+# Api-NodeJs 
+### Sobre
+Desenvolvimento desta aplicação baseado no curso da [Rocketseat](https://rocketseat.com.br/ignite), onde é implantado um pouco de cada atividade exercida durante o trabalho para tem como base na hora do desenvolviment.
 
-## Table of Contents
-
-* [Requisitos](#requisitos)
-* Comandos
-    * [Docker](#docker)
-    * [Typeorm](#typeorm)
+### Tecnologias Usadas
+<div style="width:100%; display: flex; align-items: center; justify-content: center;">
+    <div style="padding:30px;">
+        <img style="width:100%;" src="https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png">
+    </div>
+    <div style="padding:30px;width:80%;">
+        <img style="width:100%;" src="https://user-images.githubusercontent.com/53012792/132125479-38b223c4-eceb-4835-b35a-93738adf3c1a.png">
+    </div>
+    <div style="padding:30px;">
+        <img style="width:100%;" src="https://miro.medium.com/max/1000/1*ene2JbbzCfPvBtfQII3V6Q.png">
+    </div>
+</div>
 
 ## Requisitos
 ### Pré Requisitos
@@ -30,11 +38,11 @@ $ docker-compose up
 ```
 ### A Aplicação roda localmente na porta 3333
 http://localhost:3333/
-#
+
 ### Documentação Swagger 
 Pode acessar a documentação desta Api
 http://localhost:3333/api-docs
-#
+
 
 ## Docker
 
@@ -120,3 +128,5 @@ Força a recriação da apicação
     	yarn typeorm migration:revert (desfaz a migration)
     Criar Migrations
     	yarn typeorm migration:create -n CreateCategories
+#
+Made with 💜 by Fernando Esteves [See my LinkedIn](https://www.instagram.com/_nando_esteves/)
