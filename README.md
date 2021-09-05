@@ -1,6 +1,6 @@
 # Api-NodeJs 
 ### Sobre
-Desenvolvimento desta aplicação baseado no curso da [Rocketseat](https://rocketseat.com.br/ignite), onde é implantado um pouco de cada atividade exercida durante o trabalho para tem como base na hora do desenvolviment.
+Desenvolvimento dessa aplicação baseado no curso da [Rocketseat](https://rocketseat.com.br/ignite), onde é implantado um pouco de cada atividade exercida durante o trabalho para ter como base na hora do desenvolvimento.
 
 ### Tecnologias Usadas
 <img style="width:30%;" src="https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png">
@@ -11,8 +11,8 @@ Desenvolvimento desta aplicação baseado no curso da [Rocketseat](https://rocke
 
 ## Requisitos
 ### Pré Requisitos
-| Antesde você começar. Você precisa ter instalado em sua máquina as seguintes ferramentas: [Git](https://git-scm.com/), [Nodejs](https://nodejs.org/en/) e [Docker](https://docs.docker.com/get-docker/), se tiver trabalando com o Windows precisa configurar o [WSL 2](https://docs.docker.com/desktop/windows/wsl/).
-Além disso é bom ter um editor para trabalhar com este código [VsCode](https://code.visualstudio.com/).
+Antes de você começar: Você precisa ter instalado em sua máquina as seguintes ferramentas: [Git](https://git-scm.com/), [Nodejs](https://nodejs.org/en/) e [Docker](https://docs.docker.com/get-docker/), se tiver trabalando com o Windows precisa configurar o [WSL 2](https://docs.docker.com/desktop/windows/wsl/).
+Além disso, é bom ter um editor para trabalhar com este código [VsCode](https://code.visualstudio.com/).
 ##
 
 ### Rodando a Api
