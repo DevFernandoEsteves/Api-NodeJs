@@ -3,17 +3,11 @@
 Desenvolvimento desta aplicação baseado no curso da [Rocketseat](https://rocketseat.com.br/ignite), onde é implantado um pouco de cada atividade exercida durante o trabalho para tem como base na hora do desenvolviment.
 
 ### Tecnologias Usadas
-<div style="width:100%; display: flex; align-items: center; justify-content: center;">
-    <div style="padding:30px;">
-        <img style="width:100%;" src="https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png">
-    </div>
-    <div style="padding:30px;width:80%;">
-        <img style="width:100%;" src="https://user-images.githubusercontent.com/53012792/132125479-38b223c4-eceb-4835-b35a-93738adf3c1a.png">
-    </div>
-    <div style="padding:30px;">
-        <img style="width:100%;" src="https://miro.medium.com/max/1000/1*ene2JbbzCfPvBtfQII3V6Q.png">
-    </div>
-</div>
+<img style="width:30%;" src="https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png">
+<div></div>
+<img style="width:30%;" src="https://user-images.githubusercontent.com/53012792/132125479-38b223c4-eceb-4835-b35a-93738adf3c1a.png">
+<div></div>
+<img style="width:30%;" src="https://miro.medium.com/max/1000/1*ene2JbbzCfPvBtfQII3V6Q.png">
 
 ## Requisitos
 ### Pré Requisitos
