@@ -1,4 +1,8 @@
-yarn install - Roda as instalações
+
+
+##                         COMANDOS IMORTANTES
+
+'yarn install - Roda as instalações'
 yarn tsc - Gera o dist
 node dist/server.js - Roda o projeto
 
@@ -29,10 +33,15 @@ Pós Docker
 
 ### TypeOrm
 
+    https://typeorm.io
+
     Comandos
     	yarn typeorm migration:run (roda as migrations)
     	yarn typeorm migration:revert (desfaz a migration)
+
     Criar Migrations
     	yarn typeorm migration:create -n CreateCategories
+        yarn typeorm migration:create -n AlterUserDeleteUserName
+
 
 http://localhost:3333/
