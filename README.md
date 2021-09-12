@@ -125,12 +125,9 @@ Força a recriação da apicação
 
     Criar Migrations
     	yarn typeorm migration:create -n CreateCategories
-<<<<<<< HEAD
         yarn typeorm migration:create -n AlterUserDeleteUserName
 
 
 http://localhost:3333/
-=======
 #
 Made with 💜 by Fernando Esteves [See my LinkedIn](https://www.instagram.com/_nando_esteves/)
->>>>>>> 50dd67a767861a24cff5507b91f77d530a588860
