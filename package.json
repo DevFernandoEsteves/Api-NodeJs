@@ -17,8 +17,8 @@
     "typeorm": "^0.2.37"
   },
   "scripts": {
-    "dev": "ts-node-dev --inspect  --transpile-only --ignore-watch node_modules --respawn --poll src/server.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect  --transpile-only --ignore-watch node_modules --respawn --poll src/server.ts",
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
     "lint": "eslint --fix --ext .js,.jsx .",
     "test": "jest"
   },
@@ -44,6 +44,7 @@
     "prettier": "^2.3.2",
     "ts-jest": "^27.0.5",
     "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.11.0",
     "typescript": "^4.3.5",
     "uuid": "^8.3.2"
   }
