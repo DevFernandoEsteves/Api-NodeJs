@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { container } from "tsyringe";
-import { UpdateUserUseCase } from "./UpdateUserUseCase";
+import { UpdateUserUseCase } from "@modules/accounts/useCases/UpdateUserAvatar/UpdateUserUseCase";
 
 class UpdateUserAvatarController {
     async handle(request: Request, response: Response): Promise<Response> {
