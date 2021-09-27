@@ -1,5 +1,5 @@
 import { Category } from "@modules/cars/infra/typeorm/entities/category";
-import { ICategoriesRepository, ICreateCateegoryDTO } from "@modules/cars/repositories/ICategoriesRepository";
+import { ICategoriesRepository, ICreateCategoryDTO } from "@modules/cars/repositories/ICategoriesRepository";
 
 class CategoriesRepositoryInMemory implements ICategoriesRepository {
     categories: Category[] = []
@@ -13,7 +13,7 @@ class CategoriesRepositoryInMemory implements ICategoriesRepository {
         const all = this.categories
         return all
     }
-    async create({ name, description }: ICreateCateegoryDTO): Promise<void> {
+    async create({ name, description }: ICreateCategoryDTO): Promise<void> {
         const category = new Category()
         Object.assign(category, {
             name, description
