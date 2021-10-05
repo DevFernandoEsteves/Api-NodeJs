@@ -33,7 +33,7 @@ class Car {
     category: Category;
 
     @Column()
-    category_id: Date;
+    category_id: string;
 
     @CreateDateColumn()
     created_at: Date;
