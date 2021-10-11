@@ -4,7 +4,7 @@ import { authenciateRoutes } from "@shared/infra/http/routes/authenticate.routes
 import { categoriesRoutes } from "@shared/infra/http/routes/categories.routes";
 import { specificationsRoutes } from "@shared/infra/http/routes/specification.routes";
 import { usersRoutes } from "@shared/infra/http/routes/users.routes";
-import { carsRoutes } from "./cars.routes";
+import { carsRoutes } from "@shared/infra/http/routes/cars.routes";
 
 const router = Router()
 
