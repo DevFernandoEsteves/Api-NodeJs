@@ -14,7 +14,7 @@ describe('Create Car Specification', () => {
         createCarSpecificationUseCase = new CreateCarSpecificationUseCase(carsRepositoryInMemory, specificationRepositoryInMemory);
     });
 
-    it('shold be able to add a new specification to the car', async () => {
+    it('should be able to add a new specification to the car', async () => {
         expect(async () => {
             const car_id = '1234';
             const specifications_id: any = ['54321'];
@@ -23,7 +23,7 @@ describe('Create Car Specification', () => {
         }).rejects.toBeInstanceOf(AppError);
     });
 
-    it('shold be able to add a new specification to the car', async () => {
+    it('should be able to add a new specification to the car', async () => {
         const car = await carsRepositoryInMemory.create({
             name: 'Name Car',
             description: 'Description Car',
@@ -45,7 +45,7 @@ describe('Create Car Specification', () => {
             car_id: car.id,
             specifications_id
         });
-        console.log('specificationsCars:', specificationsCars)
+        // console.log('specificationsCars:', specificationsCars)
 
         expect(specificationsCars).toHaveProperty('specifications');
         expect(specificationsCars.specifications.length).toBe(1);

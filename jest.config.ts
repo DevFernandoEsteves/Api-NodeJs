@@ -39,8 +39,8 @@ export default {
     //   "clover"
     // ],
 
-    // An object that configures minimum threshold enforcement for coverage results
-    // coverageThreshold: undefined,
+    // An object that configures minimum threshould enforcement for coverage results
+    // coverageThreshould: undefined,
 
     // A path to a custom dependency extractor
     // dependencyExtractor: undefined,
@@ -131,7 +131,7 @@ export default {
     // setupFilesAfterEnv: [],
 
     // The number of seconds after which a test is considered as slow and reported as such in the results.
-    // slowTestThreshold: 5,
+    // slowTestThreshould: 5,
 
     // A list of paths to snapshot serializer modules Jest should use for snapshot testing
     // snapshotSerializers: [],
