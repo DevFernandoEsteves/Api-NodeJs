@@ -4,8 +4,8 @@ import multer from 'multer';
 import { CreateCategoryController } from '@modules/cars/useCases/createCategory/CreateCategoryController';
 import { ImportCategoryController } from '@modules/cars/useCases/importCategory/IimportCategoryController';
 import { ListCategoryController } from '@modules/cars/useCases/listCategory/ListCategoryController';
-import { ensureAuthenticated } from '../middleweres/ensureAuthenticated';
-import { ensureAdmin } from '../middleweres/ensureAdmin';
+import { ensureAuthenticated } from '../middlewares/ensureAuthenticated';
+import { ensureAdmin } from '../middlewares/ensureAdmin';
 
 const categoriesRoutes = Router();
 const upload = multer({

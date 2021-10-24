@@ -6,8 +6,8 @@ import { CreateCarController } from '@modules/cars/useCases/createCar/CreateCarC
 import { ListAvailableCarsController } from '@modules/cars/useCases/listCars/ListAvailableCarsController';
 import { CreateCarSpecificationController } from '@modules/cars/useCases/createCarSpecification/CreateCarSpecificationController';
 
-import { ensureAuthenticated } from '../middleweres/ensureAuthenticated';
-import { ensureAdmin } from '../middleweres/ensureAdmin';
+import { ensureAuthenticated } from '../middlewares/ensureAuthenticated';
+import { ensureAdmin } from '../middlewares/ensureAdmin';
 import { UploadCarImagesControlles } from '@modules/cars/useCases/uploadCarImages/UploadCarImagesControlles';
 
 const carsRoutes = Router();

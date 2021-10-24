@@ -139,7 +139,8 @@ Força a recriação da apicação
         yarn typeorm migration:create -n AlterUserDeleteUserName
 
     Rodar os testes com jest
-        yarn test
+        yarn test --runInBand (Lembrar de criar dataBase com o nome rentx_test para uso de super tert)
+        
 
 http://localhost:3333/
 
