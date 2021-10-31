@@ -3,7 +3,7 @@
     "info": {
         "title": "RentX Documentation",
         "description": "This is an API Rent",
-        "versin": "1.0.0", 
+        "version": "1.0.0", 
         "contact": {
             "email": "arquivos.fernandoesteves@gmail.com"
         }
@@ -12,8 +12,11 @@
         "/categories": {
             "post": {
                 "tags":["Category"],
-                "summary": "Creta a category",
+                "summary": "Crete a category",
                 "description": "Create a new category",
+                "security": [
+                    { "bearerAuth": [] }
+                ],
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -55,8 +58,8 @@
                             "application/json": {
                                 "schema": {
                                     "type":"array",
-                                    "itens":{
-                                    "prototipes":{
+                                    "items":{
+                                    "prototypes":{
                                         "name": {
                                             "type":"string"
                                         },
@@ -129,10 +132,51 @@
                         "description": "Created."
                     },
                     "500": {
-                        "description": "Specification already exests."
+                        "description": "Specification already exists."
                     }
                 }
             }
+        },
+        "/sessions": {
+            "post": {
+                "tags":["Session"],
+                "summary": "Authenticate User",
+                "description": "Authenticate User",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema":{
+                                "type":"object",
+                                "properties":{
+                                    "email": {
+                                        "type": "admin@rentx.com.br"
+                                    },
+                                    "password": {
+                                        "type": "admin"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Email or password incorrect!"
+                    }
+                }
+                }
         } 
+    },
+    "components": {
+        "securitySchemes":{
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
     }
 }
