@@ -11,7 +11,7 @@ class UserTokens {
     refresh_token: string
 
     @Column()
-    user_id: User
+    user_id: string
 
     @ManyToOne(() => User)
     @JoinColumn({ name: "user_id" })
