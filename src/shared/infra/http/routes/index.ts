@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { authenciateRoutes } from "@shared/infra/http/routes/authenticate.routes";
+import { authenticateRoutes } from "@shared/infra/http/routes/authenticate.routes";
 
 import { categoriesRoutes } from "@shared/infra/http/routes/categories.routes";
 import { specificationsRoutes } from "@shared/infra/http/routes/specification.routes";
@@ -14,6 +14,6 @@ router.use("/specifications", specificationsRoutes);
 router.use("/users", usersRoutes);
 router.use("/cars", carsRoutes);
 router.use("/rentals", rentalRoutes);
-router.use(authenciateRoutes)
+router.use(authenticateRoutes)
 
 export { router }

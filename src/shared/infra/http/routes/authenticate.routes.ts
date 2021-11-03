@@ -1,11 +1,16 @@
 import { Router } from "express";
 
 import { AuthenticateUserController } from "@modules/accounts/useCases/authenticateUser/AuthenticateUserController";
+import { RefreshTokenController } from "@modules/accounts/useCases/refreshToken/RefreshTokenController";
 
-const authenciateRoutes = Router()
+const authenticateRoutes = Router()
 
 const authenticateUserController = new AuthenticateUserController()
 
-authenciateRoutes.post("/sessions", authenticateUserController.handle)
+const refreshTokenController = new RefreshTokenController()
 
-export { authenciateRoutes }
+authenticateRoutes.post("/sessions", authenticateUserController.handle)
+
+authenticateRoutes.post("/refresh_token", refreshTokenController.handle)
+
+export { authenticateRoutes }
