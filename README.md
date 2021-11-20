@@ -146,4 +146,4 @@ http://localhost:3333/
 
 #
 
-Made with 💜 by Fernando Esteves [See my LinkedIn](https://www.instagram.com/_nando_esteves/)
+Made with 💜 by Fernando Esteves [See my LinkedIn](https://www.linkedin.com/in/fernando-esteves-61ab3b17a/)
